@@ -220,6 +220,7 @@ validate_zone_type() {
     alibaba-emr)     return 0;;
     localfs)         return 0;;
     asf)             return 0;;
+    mapr)            return 0;;
   esac
   # for anything not matched by the above case, validation failed
   echo "Please choose from one of the following zone types:"
@@ -233,6 +234,7 @@ hdp:         Hadoop
 alibaba-emr: Alibaba EMR
 localfs:     Local filesystem
 asf:         Apache Software Foundation Hadoop
+mapr:        MapR Data Platform
 EOZONE
   return 1
 }
